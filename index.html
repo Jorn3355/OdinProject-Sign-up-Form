@@ -12,9 +12,10 @@
             <img src="./Assets/Odin logo.png">
             ODIN
         </div>
-        </img>
+        <span id="credit">Background Image by Halie West on <a>Unsplash</a></span>
     </aside>
     <div class="wrapper">
+        <div class="content">
         <h3>
             This is not a real online service!
             You know you need something like this in your life.
@@ -27,11 +28,11 @@
                 <legend>Let's do this!</legend>
                 <div class="container">
                     <div class="sub-container">
-                        <label for="fname">FIRST NAME</label>
+                        <label for="fname">FIRST NAME<span class="required">*</span></label>
                         <input id="fname" type="text" required>
                     </div>
                     <div class="sub-container">
-                        <label for="lname">LAST NAME</label>
+                        <label for="lname">LAST NAME<span class="required">*</span></label>
                         <input id="lname" type="text" required>
                     </div>
                     <div class="sub-container">
@@ -43,18 +44,21 @@
                         <input id="phoneNum" type="tel">
                     </div>
                     <div class="sub-container">
-                        <label for="pass">PASSWORD</label>
+                        <label for="pass">PASSWORD<span class="required">*</span></label>
                         <input id="pass" type="password" required>
                     </div>
                     <div class="sub-container">
-                        <label for="confPass">CONFIRM PASSWORD</label>
+                        <label for="confPass">CONFIRM PASSWORD<span class="required">*</span></label>
                         <input id="confPass" type="password" required>
                     </div>
                 </div>
             </fieldset>
             <button type="submit">Create Account</button>
-            <p>Already have an account? <a href="">Log in</a></p>
+            <p>Already have an account? <a id="logIn" href="login.html">Log in</a></p>
         </form>
+        </div>
     </div>
+    <script src="index.js">
+    </script>
 </body>
 </html>

@@ -4,14 +4,12 @@
          url('./Assets/Fonts/norse-bold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
 
 *, *::after, *::before {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-weight: 800;
 }
 
 
@@ -34,32 +32,28 @@ img {
 
 h3 {
     font-size: 18px;
-    margin: 7.5% 0 2.5% 0;
-    padding-left: 15px;
+    margin: 6.5% 0 2.5% 0;
+    padding: 0px 20px;
 }
 
 p {
     font-size: 12px;
-    margin-left: 15px;
-}
-
-a {
-    text-decoration: none;
-    color: black;
+    margin-left: 20px;
 }
 
 fieldset {
     position: relative;
     border: none;
     box-shadow: lightgrey 5px 5px 7.5px 2.5px;
-    padding: 15px
+    padding: 20px;
 }
 
 legend {
     position: absolute;
     top: 0;
-    margin-top: 2.5px;
+    margin-top: 2.5px; 
     font-size: 18px;
+    font-weight: 800;
 }
 
 label {
@@ -71,12 +65,28 @@ label {
 input {
     display: block;
     font: 15px sans-serif;
-    border-color: rgba(0, 0, 0, 0.25)
+    border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+input:focus {
+    box-shadow:rgba(0,0,0,0.25) 0px 5px 7.5px 0px;
+}
+
+input:focus:valid { 
+    background: rgba(0,200,0,0.1);
+}
+
+input:focus:invalid {
+    background: rgba(255,0,0,0.1);
+}
+
+input:focus {
+    border: 0.1px solid rgba(0,0,1,0.1);
 }
 
 button {
     padding: 10px 20px;
-    margin: 25px 15px 10px 15px;
+    margin: 25px 15px 10px 20px;
     background: #596D48;
     font:12px sans-serif;
     color: white;
@@ -86,6 +96,10 @@ button {
     cursor: pointer;
 }
 
+.required {
+    color: red;
+}
+
 .sub-container {
     display: flex;
     flex-flow: column;
@@ -93,7 +107,6 @@ button {
 }
 
 .wrapper {
-    
     width: 65%;
     min-height: 100%;
 }
@@ -116,4 +129,18 @@ button {
     font: 68px "Norse", sans-serif;
     color: white;
     background-color: rgba(0, 0 ,0 , 0.4)
+}
+
+#credit {
+    position: absolute;
+    bottom: 0;
+    color: white;
+    text-decoration: underline;
+    font-size: 14px;
+    margin-left: 25px;
+}
+
+#logIn {
+    text-decoration: none;
+    color: blue;
 }

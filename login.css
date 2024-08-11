@@ -1,0 +1,101 @@
+@font-face {
+    font-family: 'Norse';
+    src: url('./Assets/Fonts/norse-bold-webfont.woff2') format('woff2'),
+         url('./Assets/Fonts/norse-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    background: url(./Assets/logInleafbackground.jpg);
+}
+
+main {
+    width: 50%;
+    min-height: 100%;
+    background: rgba(0,0,0,0.5);
+}
+
+img {
+    display: inline;
+    width: 75px;
+}
+
+label:not(#recover) {
+    display: flex;
+    justify-content: space-between;
+    font: 12px sans-serif;
+    letter-spacing: 2px;
+}
+
+form {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    min-height: 100%;
+}
+
+button {
+    border: 1px solid #000;
+    border-radius: 8px;
+    width: max(40px, 35%);
+    background: linear-gradient(#bcff79, #009f00);
+    color: #fff;
+    font: 16px sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+p {
+    position: relative;
+    bottom: 0;
+    font: sans-serif;
+    color: #fff;
+    padding: 10% 12.5% ;
+}
+
+fieldset {
+    width: 75%;
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    border: none;
+    gap: 16px;
+    color: #fff;
+    padding: 15px 4px;
+}
+
+.container {
+    width: 65%;
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    gap: 4px;
+}
+
+#logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font: 75px "Norse", sans-serif;
+    margin: 15px 0;
+}
+
+#recover {
+    font-size: 12px;
+    color: lightblue;
+    letter-spacing: 0;
+    cursor: pointer;
+}
